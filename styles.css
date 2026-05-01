@@ -168,6 +168,29 @@ footer{background:var(--tealDk);padding:3.5rem 2.5rem 2rem}
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
 .reveal.visible{opacity:1;transform:none}
 
+/* ── TESTIMONIALS ── */
+.review-card{background:var(--white);border:1px solid var(--border);border-radius:8px;padding:1.8rem;position:relative}
+.review-stars{color:#f59e0b;font-size:1rem;letter-spacing:.05em;margin-bottom:.9rem}
+.review-text{font-size:.93rem;color:var(--body);line-height:1.82;margin-bottom:1.2rem;font-style:italic}
+.review-author{font-size:.85rem;font-weight:700;color:var(--text)}
+.review-role{font-size:.76rem;color:var(--dim);margin-top:.15rem}
+.review-google{position:absolute;top:1.4rem;right:1.4rem;width:20px;height:20px;opacity:.4}
+
+/* ── MAP ── */
+.map-wrap{border-radius:8px;overflow:hidden;border:1px solid var(--border);box-shadow:0 4px 20px rgba(0,0,0,.07)}
+.map-tabs{display:flex;gap:0;margin-bottom:1.2rem;border:1px solid var(--border);border-radius:6px;overflow:hidden;width:fit-content}
+.map-tab{padding:.5rem 1.2rem;font-size:.8rem;font-weight:600;cursor:pointer;background:var(--bg2);color:var(--body);border:none;transition:background .2s,color .2s;font-family:'Source Sans 3',sans-serif}
+.map-tab.active{background:var(--teal);color:var(--white)}
+.map-frame{display:none;width:100%;height:380px;border:0}
+.map-frame.active{display:block}
+
+/* ── FLOATING EMERGENCY BUTTON ── */
+.emergency-float{position:fixed;bottom:1.8rem;right:1.8rem;z-index:999;display:flex;flex-direction:column;align-items:flex-end;gap:.5rem}
+.emergency-float a{display:flex;align-items:center;gap:.6rem;background:var(--tealDk);color:var(--white);padding:.75rem 1.2rem;border-radius:50px;font-size:.82rem;font-weight:700;text-decoration:none;box-shadow:0 4px 20px rgba(26,85,85,.4);transition:background .2s,transform .15s;white-space:nowrap}
+.emergency-float a:hover{background:#0f3a3a;transform:translateY(-2px)}
+.emergency-float .pulse-dot{width:9px;height:9px;border-radius:50%;background:#ef4444;flex-shrink:0;animation:emergPulse 1.8s ease-in-out infinite}
+@keyframes emergPulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(.75)}}
+
 /* ── RESPONSIVE ── */
 @media(max-width:1024px){
   .split{grid-template-columns:1fr;gap:3rem}

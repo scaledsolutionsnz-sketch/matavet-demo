@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<link rel="icon" type="image/jpeg" href="logo-dark.jpg">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MVS Equine — Specialist Equine Veterinary Services, Matamata</title>
 <meta name="description" content="Specialist equine veterinary care in Matamata, Waikato. Ambulatory services, hospital & referral care, reproduction, surgery and diagnostics. 24/7 emergency. 07 888 8193.">
@@ -196,6 +197,44 @@
 
 <hr class="divider">
 
+<!-- TESTIMONIALS -->
+<section style="background:var(--bg2)">
+  <div class="section-inner">
+    <div class="reveal" style="max-width:560px;margin-bottom:3rem">
+      <p class="eyebrow">What People Say</p>
+      <h2>Trusted by horse owners<br><em>across Waikato.</em></h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.25rem">
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"The team at MVS saved my mare after a severe colic episode. I called at 2am and they were on it immediately — calm, professional, and genuinely caring. She made a full recovery. I can't thank them enough."</p>
+        <div class="review-author">Sarah M.</div>
+        <div class="review-role">Horse owner, Cambridge</div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"We've used MVS Equine for our entire training string for years. The diagnostic capability here is second to none — the nuclear scintigraphy facility alone has saved us from missing subtle injuries that would have ended careers."</p>
+        <div class="review-author">James T.</div>
+        <div class="review-role">Racehorse Trainer, Matamata</div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Brought my warmblood through for a pre-purchase exam and then referred back for an ongoing lameness investigation. Thorough, knowledgeable, and they take the time to explain everything. Wouldn't go anywhere else."</p>
+        <div class="review-author">Rachel K.</div>
+        <div class="review-role">Sport horse owner, Hamilton</div>
+      </div>
+      <div class="review-card reveal">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"MVS EquiBreed has been incredible to work with for our breeding programme. Dr Harteveld's knowledge and attention to detail has made a real difference to our conception rates. Highly recommend their reproduction services."</p>
+        <div class="review-author">Brendon F.</div>
+        <div class="review-role">Thoroughbred Stud, Waikato</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
 <!-- CTA BAND -->
 <section style="padding:5rem 2.5rem;background:var(--tealXlt)">
   <div class="section-inner" style="display:grid;grid-template-columns:1fr auto;gap:3rem;align-items:center;flex-wrap:wrap">
@@ -256,5 +295,9 @@ function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('op
 const obs=new IntersectionObserver(e=>{e.forEach((el,i)=>{if(el.isIntersecting){setTimeout(()=>el.target.classList.add('visible'),i*80);obs.unobserve(el.target)}})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 </script>
+
+<div class="emergency-float">
+  <a href="tel:078888193"><span class="pulse-dot"></span>Emergency 24/7 &nbsp;·&nbsp; 07 888 8193</a>
+</div>
 </body>
 </html>
