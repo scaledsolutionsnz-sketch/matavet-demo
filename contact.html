@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us — MVS Equine</title>
+<meta name="description" content="Contact MVS Equine — Matamata Veterinary Services. Phone 07 888 8193. Emergency care 24/7. 362 Hinuera Road, Matamata.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<style>
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+.contact-form-wrap{background:var(--bg3);border:1px solid var(--border);border-radius:20px;padding:2.4rem}
+.contact-form-wrap h3{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:600;color:var(--text);margin:0 0 1.5rem}
+.cf-field{display:flex;flex-direction:column;gap:.4rem;margin-bottom:1.1rem}
+.cf-field label{font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--goldLt)}
+.cf-field input,.cf-field select,.cf-field textarea{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:.8rem 1rem;font-size:.88rem;color:var(--text);font-family:'Inter',sans-serif;outline:none;transition:border-color .2s}
+.cf-field input:focus,.cf-field select:focus,.cf-field textarea:focus{border-color:var(--gold)}
+.cf-field select{appearance:none;cursor:pointer}
+.cf-field textarea{resize:vertical;min-height:110px}
+.cf-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.cf-submit{width:100%;padding:1rem;background:var(--gold);border:none;border-radius:10px;font-family:'Inter',sans-serif;font-size:.88rem;font-weight:600;color:#07090f;cursor:pointer;letter-spacing:.04em;text-transform:uppercase;transition:background .2s,transform .15s}
+.cf-submit:hover{background:var(--goldLt);transform:translateY(-1px)}
+.info-block{background:var(--bg3);border:1px solid var(--border);border-radius:16px;padding:1.6rem;margin-bottom:1rem}
+.info-block-label{font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--goldLt);margin-bottom:.7rem}
+.info-block-title{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:var(--text);margin-bottom:.5rem}
+.info-block p{font-size:.86rem;color:var(--body);line-height:1.72;margin:0 0 .3rem}
+.info-block a{color:var(--body);text-decoration:none;transition:color .2s}
+.info-block a:hover{color:var(--goldLt)}
+.emergency-banner{background:linear-gradient(135deg,rgba(201,168,64,.12),rgba(201,168,64,.04));border:1px solid rgba(201,168,64,.3);border-radius:16px;padding:1.6rem;margin-bottom:1rem;display:flex;gap:1rem;align-items:flex-start}
+.emergency-icon{font-size:1.6rem;flex-shrink:0;margin-top:.1rem}
+.success-msg{display:none;background:rgba(201,168,64,.1);border:1px solid rgba(201,168,64,.3);border-radius:12px;padding:1.2rem;text-align:center;font-size:.9rem;color:var(--goldLt);margin-top:1rem}
+@media(max-width:768px){.contact-grid{grid-template-columns:1fr}.cf-row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-mark">🐴</div>
+    <div class="nav-logo-text">
+      <span class="nav-logo-name">MVS Equine</span>
+      <span class="nav-logo-sub">Matamata Veterinary Services</span>
+    </div>
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="ambulatory.html">Ambulatory</a>
+    <a href="hospital.html">Hospital</a>
+    <a href="equibreed.html">EquiBreed</a>
+    <a href="employment.html">Employment</a>
+    <a href="contact.html" class="nav-cta active">Contact Us</a>
+  </div>
+  <div class="hamburger" onclick="toggleMenu()" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" onclick="toggleMenu()">Home</a>
+  <a href="ambulatory.html" onclick="toggleMenu()">Ambulatory Services</a>
+  <a href="hospital.html" onclick="toggleMenu()">Hospital & Referral</a>
+  <a href="equibreed.html" onclick="toggleMenu()">MVS EquiBreed</a>
+  <a href="employment.html" onclick="toggleMenu()">Employment</a>
+  <a href="contact.html" onclick="toggleMenu()">Contact Us</a>
+</div>
+
+<div class="page-hero" style="min-height:50vh">
+  <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1548767797-d8c844163c4a?w=2000&q=80&fm=webp&fit=crop')"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-overlay2"></div>
+  <div class="page-hero-content">
+    <div class="hero-eyebrow">We're Here When You Need Us</div>
+    <h1><em>Contact</em><br>MVS Equine</h1>
+    <p>Get in touch with our team — for appointments, referrals, reproduction enquiries, or emergencies any time of day or night.</p>
+  </div>
+</div>
+
+<section style="padding:5rem 2.5rem">
+  <div class="section-inner">
+    <div class="contact-grid">
+
+      <!-- LEFT: Contact Form -->
+      <div class="reveal">
+        <div class="contact-form-wrap">
+          <h3>Send Us a Message</h3>
+          <form action="https://api.staticforms.xyz/submit" method="post" id="contactForm">
+            <input type="hidden" name="apiKey" value="sf_768da8d33927e7f4f241d0a6">
+            <input type="hidden" name="replyTo" value="@">
+            <div class="cf-row">
+              <div class="cf-field">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Jane" required>
+              </div>
+              <div class="cf-field">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Smith" required>
+              </div>
+            </div>
+            <div class="cf-field">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+            </div>
+            <div class="cf-field">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="021 000 0000">
+            </div>
+            <div class="cf-field">
+              <label for="service">Enquiry Type</label>
+              <select id="service" name="service" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="Ambulatory Visit">Book an Ambulatory Visit</option>
+                <option value="Hospital Referral">Hospital Referral</option>
+                <option value="Emergency">Emergency / Urgent Care</option>
+                <option value="EquiBreed - AI">EquiBreed — Artificial Insemination</option>
+                <option value="EquiBreed - Embryo Transfer">EquiBreed — Embryo Transfer</option>
+                <option value="EquiBreed - Stallion Services">EquiBreed — Stallion Services</option>
+                <option value="EquiBreed - Fertility">EquiBreed — Fertility Diagnosis</option>
+                <option value="Pre-Purchase Examination">Pre-Purchase Examination</option>
+                <option value="Employment">Employment / Internship</option>
+                <option value="General Enquiry">General Enquiry</option>
+              </select>
+            </div>
+            <div class="cf-field">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" placeholder="Tell us about your horse and how we can help…" required></textarea>
+            </div>
+            <button type="submit" class="cf-submit">Send Enquiry</button>
+            <div class="success-msg" id="successMsg">Thank you — your message has been sent. We'll be in touch shortly.</div>
+          </form>
+        </div>
+      </div>
+
+      <!-- RIGHT: Contact Info -->
+      <div class="reveal">
+
+        <div class="emergency-banner">
+          <div class="emergency-icon">🚨</div>
+          <div>
+            <div style="font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--goldLt);margin-bottom:.4rem">Emergencies — 24/7</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;color:var(--text);margin-bottom:.3rem">Call us any time</div>
+            <p style="font-size:.86rem;color:var(--body);margin:0">Our team is available around the clock for emergency cases. Do not wait — call us immediately.</p>
+            <a href="tel:078888193" style="display:inline-block;margin-top:.8rem;background:var(--gold);color:#07090f;font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.5rem 1.1rem;border-radius:8px;text-decoration:none">📞 07 888 8193</a>
+          </div>
+        </div>
+
+        <div class="info-block">
+          <div class="info-block-label">Clinic Hours</div>
+          <div class="info-block-title">Mon–Fri 8am–5pm</div>
+          <p>Emergencies accepted 24 hours a day, 7 days a week, 365 days a year.</p>
+        </div>
+
+        <div class="info-block">
+          <div class="info-block-label">MVS Equine Hospital</div>
+          <div class="info-block-title">362 Hinuera Road, RD2 Matamata</div>
+          <p>Hospital, referral services, surgery, diagnostics, and critical care.</p>
+          <p>📞 <a href="tel:078888193">07 888 8193</a></p>
+          <p>✉️ <a href="mailto:equine@matamatavets.co.nz">equine@matamatavets.co.nz</a></p>
+          <a href="https://maps.google.com/?q=362+Hinuera+Road+Matamata" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.4rem;margin-top:.6rem;font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--goldLt)">View on Google Maps →</a>
+        </div>
+
+        <div class="info-block">
+          <div class="info-block-label">MVS EquiBreed</div>
+          <div class="info-block-title">19 Puketutu Road, Matamata</div>
+          <p>Specialist equine reproduction — AI, embryo transfer, stallion services. MPI-approved facility.</p>
+          <p>📞 <a href="tel:078888193">07 888 8193</a></p>
+          <p>✉️ <a href="mailto:equine@matamatavets.co.nz">equine@matamatavets.co.nz</a></p>
+          <a href="https://maps.google.com/?q=19+Puketutu+Road+Matamata" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.4rem;margin-top:.6rem;font-size:.78rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--goldLt)">View on Google Maps →</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand-name">MVS Equine</div>
+        <div class="footer-brand-sub">Matamata Veterinary Services</div>
+        <p class="footer-brand-desc">Specialist equine veterinary care — 24 hours a day, 365 days a year.</p>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Services</div>
+        <a href="ambulatory.html">Ambulatory Services</a>
+        <a href="hospital.html">Hospital & Referral</a>
+        <a href="equibreed.html">MVS EquiBreed</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Company</div>
+        <a href="index.html">Home</a>
+        <a href="employment.html">Employment</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Contact</div>
+        <p>📞 <a href="tel:078888193">07 888 8193</a></p>
+        <p>✉️ <a href="mailto:equine@matamatavets.co.nz">equine@matamatavets.co.nz</a></p>
+        <p>📍 362 Hinuera Road, RD2 Matamata</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2025 Matamata Veterinary Services Equine Ltd</span>
+      <span class="footer-copy">Mon–Fri 8am–5pm · Emergencies 24/7</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('scrolled',window.scrollY>30)},{passive:true});
+function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open')}
+const obs=new IntersectionObserver(e=>{e.forEach((el,i)=>{if(el.isIntersecting){setTimeout(()=>el.target.classList.add('visible'),i*80);obs.unobserve(el.target)}})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+document.getElementById('contactForm').addEventListener('submit',function(e){
+  setTimeout(()=>{
+    const s=document.getElementById('successMsg');
+    if(s)s.style.display='block';
+  },800);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MVS Equine — Specialist Equine Veterinary Services, Matamata</title>
+<meta name="description" content="Specialist equine veterinary care in Matamata, Waikato. Ambulatory services, hospital & referral care, reproduction, surgery and diagnostics. 24/7 emergency. 07 888 8193.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav id="nav">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-mark">🐴</div>
+    <div class="nav-logo-text">
+      <span class="nav-logo-name">MVS Equine</span>
+      <span class="nav-logo-sub">Matamata Veterinary Services</span>
+    </div>
+  </a>
+  <div class="nav-links">
+    <a href="index.html" class="active">Home</a>
+    <a href="ambulatory.html">Ambulatory</a>
+    <a href="hospital.html">Hospital</a>
+    <a href="equibreed.html">EquiBreed</a>
+    <a href="employment.html">Employment</a>
+    <a href="contact.html" class="nav-cta">Contact Us</a>
+  </div>
+  <div class="hamburger" onclick="toggleMenu()" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" onclick="toggleMenu()">Home</a>
+  <a href="ambulatory.html" onclick="toggleMenu()">Ambulatory Services</a>
+  <a href="hospital.html" onclick="toggleMenu()">Hospital & Referral</a>
+  <a href="equibreed.html" onclick="toggleMenu()">MVS EquiBreed</a>
+  <a href="employment.html" onclick="toggleMenu()">Employment</a>
+  <a href="contact.html" onclick="toggleMenu()">Contact Us</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=2000&q=85&fm=webp&fit=crop')"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-overlay2"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Specialist Equine Veterinary Services</div>
+    <h1>Trusted care for<br><em>horses that matter.</em></h1>
+    <p class="hero-sub">From routine health care to advanced diagnostics, surgery and reproduction — MVS Equine delivers world-class equine veterinary services in the heart of Waikato.</p>
+    <div class="hero-btns">
+      <a href="contact.html" class="btn-primary">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 010 1.18 2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14z"/></svg>
+        07 888 8193
+      </a>
+      <a href="ambulatory.html" class="btn-ghost">Our Services</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num">24/7</div>
+        <div class="stat-label">Emergency Care</div>
+      </div>
+      <div>
+        <div class="stat-num">365</div>
+        <div class="stat-label">Days a Year</div>
+      </div>
+      <div>
+        <div class="stat-num">Waikato</div>
+        <div class="stat-label">& Surrounds</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES OVERVIEW -->
+<section style="background:var(--bg2)">
+  <div class="section-inner">
+    <div class="reveal" style="text-align:center;max-width:640px;margin:0 auto 4rem">
+      <p class="eyebrow" style="justify-content:center">What We Offer</p>
+      <h2>Comprehensive equine<br>veterinary expertise.</h2>
+      <p class="section-body" style="max-width:100%;text-align:center;margin:0 auto">From ambulatory field calls to advanced surgical procedures, our team covers the full spectrum of equine health care — all under one roof in Matamata.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.25rem">
+      <div class="card reveal">
+        <div class="card-icon">🏇</div>
+        <div class="card-title">Ambulatory Services</div>
+        <p class="card-body">Expert field-based care at your property. Preventative health, lameness, dentistry, radiography, and ultrasonography — all brought to your horse.</p>
+        <a href="ambulatory.html" style="display:inline-flex;align-items:center;gap:.4rem;font-size:.82rem;font-weight:600;color:var(--goldLt);margin-top:1.2rem;transition:gap .2s">Learn more →</a>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">🏥</div>
+        <div class="card-title">Hospital & Referral</div>
+        <p class="card-body">Purpose-built equine hospital with advanced diagnostics, nuclear scintigraphy, standing and general anaesthetic surgery, and 24/7 critical care.</p>
+        <a href="hospital.html" style="display:inline-flex;align-items:center;gap:.4rem;font-size:.82rem;font-weight:600;color:var(--goldLt);margin-top:1.2rem">Learn more →</a>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">🔬</div>
+        <div class="card-title">MVS EquiBreed</div>
+        <p class="card-body">Specialist reproduction services — artificial insemination, embryo transfer, fertility diagnosis, and stallion services from our MPI-approved facility.</p>
+        <a href="equibreed.html" style="display:inline-flex;align-items:center;gap:.4rem;font-size:.82rem;font-weight:600;color:var(--goldLt);margin-top:1.2rem">Learn more →</a>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">📋</div>
+        <div class="card-title">Pre-Purchase Exams</div>
+        <p class="card-body">Two-stage and five-stage PPE assessments for pleasure horses through to high-performance racehorses. Thorough, independent, and impartial.</p>
+        <a href="ambulatory.html" style="display:inline-flex;align-items:center;gap:.4rem;font-size:.82rem;font-weight:600;color:var(--goldLt);margin-top:1.2rem">Learn more →</a>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">🦷</div>
+        <div class="card-title">Equine Dentistry</div>
+        <p class="card-body">Comprehensive dental care from routine rasping and examinations through to complex extractions and surgical dental procedures.</p>
+        <a href="ambulatory.html" style="display:inline-flex;align-items:center;gap:.4rem;font-size:.82rem;font-weight:600;color:var(--goldLt);margin-top:1.2rem">Learn more →</a>
+      </div>
+      <div class="card reveal">
+        <div class="card-icon">🩺</div>
+        <div class="card-title">Preventative Health</div>
+        <p class="card-body">Vaccination programmes, parasite control, nutritional advice, and general wellness care — keeping your horses healthy all year round.</p>
+        <a href="ambulatory.html" style="display:inline-flex;align-items:center;gap:.4rem;font-size:.82rem;font-weight:600;color:var(--goldLt);margin-top:1.2rem">Learn more →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ABOUT SPLIT -->
+<section>
+  <div class="section-inner">
+    <div class="split">
+      <div class="reveal">
+        <p class="eyebrow">About MVS Equine</p>
+        <h2>A dedicated team built around your <em>horse's wellbeing.</em></h2>
+        <p class="section-body" style="margin-bottom:1.5rem">Matamata Veterinary Services Equine has built a reputation across Waikato and beyond for delivering exceptional care — combining clinical expertise with genuine passion for horses and the people who care for them.</p>
+        <p class="section-body" style="margin-bottom:2rem">Our team includes veterinarians with specialist expertise in racing, performance, surgery, foal care, and reproduction, supported by veterinary interns, nurses, technicians, and administrative staff dedicated to your horse's care.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:1rem">
+          <a href="contact.html" class="btn-primary">Get in Touch</a>
+          <a href="ambulatory.html" class="btn-ghost">View Services</a>
+        </div>
+      </div>
+      <div class="split-img reveal">
+        <img src="https://images.unsplash.com/photo-1601358877084-eaa34eff8d05?w=900&q=85&fm=webp&fit=crop" alt="Equine veterinary care at MVS">
+        <div class="split-img-badge">
+          <div class="split-badge-icon">🏆</div>
+          <div class="split-badge-text">
+            <strong>Waikato's Premier</strong>
+            <span>Equine Specialist Clinic</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- FACILITIES -->
+<section style="background:var(--bg2)">
+  <div class="section-inner">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center">
+      <div class="split-img reveal">
+        <img src="https://images.unsplash.com/photo-1598974357801-cbca100e65d3?w=900&q=85&fm=webp&fit=crop" alt="MVS Equine hospital facilities">
+      </div>
+      <div class="reveal">
+        <p class="eyebrow">Our Facilities</p>
+        <h2>Purpose-built for <em>equine excellence.</em></h2>
+        <p class="section-body" style="margin-bottom:2rem">Our hospital at 362 Hinuera Road features everything needed for advanced equine care — from state-of-the-art diagnostic equipment to surgical theatres, post-op recovery, and extensive stable and paddock facilities.</p>
+        <div style="display:flex;flex-direction:column;gap:.85rem">
+          <div style="display:flex;align-items:flex-start;gap:.9rem;padding:1rem 1.2rem;background:var(--bg3);border:1px solid var(--border);border-radius:12px">
+            <span style="color:var(--goldLt);font-size:1.1rem;margin-top:.05rem">✦</span>
+            <div>
+              <strong style="font-size:.9rem;color:var(--text);display:block;margin-bottom:.15rem">Advanced Diagnostic Imaging</strong>
+              <span style="font-size:.84rem;color:var(--body)">Digital radiography, ultrasonography, and nuclear scintigraphy (bone scan)</span>
+            </div>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:.9rem;padding:1rem 1.2rem;background:var(--bg3);border:1px solid var(--border);border-radius:12px">
+            <span style="color:var(--goldLt);font-size:1.1rem;margin-top:.05rem">✦</span>
+            <div>
+              <strong style="font-size:.9rem;color:var(--text);display:block;margin-bottom:.15rem">Surgical Theatres</strong>
+              <span style="font-size:.84rem;color:var(--body)">Standing procedures and full general anaesthetic surgery capabilities</span>
+            </div>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:.9rem;padding:1rem 1.2rem;background:var(--bg3);border:1px solid var(--border);border-radius:12px">
+            <span style="color:var(--goldLt);font-size:1.1rem;margin-top:.05rem">✦</span>
+            <div>
+              <strong style="font-size:.9rem;color:var(--text);display:block;margin-bottom:.15rem">Extensive Grounds</strong>
+              <span style="font-size:.84rem;color:var(--body)">Post-and-rail yards, paddocks, and stabling for in-patient care</span>
+            </div>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:.9rem;padding:1rem 1.2rem;background:var(--bg3);border:1px solid var(--border);border-radius:12px">
+            <span style="color:var(--goldLt);font-size:1.1rem;margin-top:.05rem">✦</span>
+            <div>
+              <strong style="font-size:.9rem;color:var(--text);display:block;margin-bottom:.15rem">MVS EquiBreed — 19 Puketutu Road</strong>
+              <span style="font-size:.84rem;color:var(--body)">MPI-approved reproduction facility adjacent to the equine hospital</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- CTA BAND -->
+<section style="padding:5rem 2.5rem;background:linear-gradient(135deg,rgba(201,168,64,.08) 0%,transparent 60%)">
+  <div class="section-inner" style="display:grid;grid-template-columns:1fr auto;gap:3rem;align-items:center;flex-wrap:wrap">
+    <div class="reveal">
+      <p class="eyebrow">Available 24/7</p>
+      <h2 style="margin-bottom:.6rem">Emergency calls<br>accepted <em>any time.</em></h2>
+      <p style="font-size:.95rem;color:var(--body)">Clinic hours Mon–Fri 8am–5pm. For all other times — call us.</p>
+    </div>
+    <div class="reveal" style="display:flex;flex-direction:column;gap:1rem;min-width:220px">
+      <a href="tel:0788881 93" class="btn-primary" style="justify-content:center;font-size:1rem">📞 07 888 8193</a>
+      <a href="mailto:equine@matamatavets.co.nz" class="btn-ghost" style="justify-content:center;font-size:.88rem">equine@matamatavets.co.nz</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand-name">MVS Equine</div>
+        <div class="footer-brand-sub">Matamata Veterinary Services</div>
+        <p class="footer-brand-desc">Specialist equine veterinary care delivered with expertise and compassion — 24 hours a day, 365 days a year across Waikato and beyond.</p>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Services</div>
+        <a href="ambulatory.html">Ambulatory Services</a>
+        <a href="hospital.html">Hospital & Referral</a>
+        <a href="equibreed.html">MVS EquiBreed</a>
+        <a href="ambulatory.html">Pre-Purchase Exams</a>
+        <a href="ambulatory.html">Dentistry</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Company</div>
+        <a href="index.html">Home</a>
+        <a href="employment.html">Employment</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://facebook.com/mvs.equine" target="_blank">Facebook</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Contact</div>
+        <p>📞 <a href="tel:078888193">07 888 8193</a></p>
+        <p>✉️ <a href="mailto:equine@matamatavets.co.nz">equine@matamatavets.co.nz</a></p>
+        <p>📍 362 Hinuera Road, RD2 Matamata</p>
+        <p style="margin-top:.5rem;font-size:.8rem;color:var(--dim)">Mon–Fri 8am–5pm<br>Emergencies: 24/7</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2025 Matamata Veterinary Services Equine Ltd · All rights reserved.</span>
+      <span class="footer-copy">362 Hinuera Road, RD2 Matamata, Waikato, New Zealand</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('scroll',()=>{document.getElementById('nav').classList.toggle('scrolled',window.scrollY>30)},{passive:true});
+function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('open')}
+const obs=new IntersectionObserver(e=>{e.forEach((el,i)=>{if(el.isIntersecting){setTimeout(()=>el.target.classList.add('visible'),i*80);obs.unobserve(el.target)}})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
